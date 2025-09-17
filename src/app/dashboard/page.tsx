@@ -21,8 +21,8 @@ export default function Dashboard() {
         </div>
         <div className="p-5 flex mt-auto text-left">
           <p className="text-[#F0FFFF] text-2xl align-middle font-bold w-100">
-            " We turn ideas into impact — from websites and apps, to SEO, trading fund management, video editing, and content writing.
-            Whatever your vision, we help you create, scale, and succeed".
+            We turn ideas into impact — from websites and apps, to SEO, trading fund management, video editing, and content writing.
+            Whatever your vision, we help you create, scale, and succeed.
             <span className="mt-5 justify-center text-xl font-bold flex">
               <button className="shadow-2xl bg-[#0d4c7f] text-[#F0FFFF] font-bold py-2 px-5 rounded-2xl">
                 Book Now
