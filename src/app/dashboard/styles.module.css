@@ -1,0 +1,84 @@
+
+.heroPage{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/team04.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), -2px -4px 6px rgba(0, 0, 0, 0.3);
+    animation: slideShow 20s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes slideShow {
+  0% { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/teams01.jpg");}
+  33% { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/team02.jpg"); }
+  66% { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/team03.jpg"); }
+  100% { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/team04.jpg"); }
+} 
+
+
+.videoIcon {
+  font-size: 3rem;       /* big icon */
+  color: #e63946;        /* red for video */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.videoIcon:hover {
+  transform: scale(1.2);
+  color: #ff4d6d;
+}
+
+.devIcon {
+  font-size: 3rem;
+  color: #1d4ed8;        /* blue for dev */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.devIcon:hover {
+  transform: scale(1.2);
+  color: #3b82f6;
+}
+
+.designIcon {
+  font-size: 3rem;
+  color: #ec4899;        /* pink for design */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.designIcon:hover {
+  transform: scale(1.2);
+  color: #f472b6;
+}
+
+.seoIcon {
+  font-size: 3rem;
+  color: #10b981;        /* green for SEO */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.seoIcon:hover {
+  transform: scale(1.2);
+  color: #34d399;
+}
+
+.about{
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.5), 2px -4px -4px rgba(0,0,0,0.5);
+}
+.imageContainer{
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5),
+              -2px -4px 6px rgba(0, 0, 0, 0.5);
+}
+.services{
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(0, 0, 0, 0.2) ;
+  padding: 10px;
+
+}
+
