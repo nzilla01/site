@@ -14,12 +14,12 @@ export default function Dashboard() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="p-2">
+    <div className="p-2 ">
       {/* Hero Section */}
-      <div className={`h-[400px] ${styles.heroPage}`}>
+      <div className={`h-[400px] sm:w-full ${styles.heroPage}`}>
         <div className="p-10 text-left">
           <h1 className="text-[#F0FFFF] ml-20 text-5xl font-black">Atrivix</h1>
-          <h3 className="text-[#F0FFFF] text-3xl font-light">
+          <h3 className={`text-[#F0FFFF] text-3xl font-light ${styles.pre}`}>
             Building brands, boosting presence,
             <br /> and managing growth all in one solution.
           </h3>
@@ -31,7 +31,7 @@ export default function Dashboard() {
             <span className="mt-5 justify-center text-xl font-bold flex">
               <button
                 onClick={() => setIsOpen(true)}
-               className="shadow-2xl bg-[#0d4c7f] text-[#F0FFFF] font-bold py-2 px-5 rounded-2xl">
+               className="shadow-2xl bg-[#0d4c7f] text-[#F0FFFF] font-bold py-2 px-5 rounded-2xl text-center ">
                 Book Now
               </button>
             </span>
@@ -49,7 +49,7 @@ export default function Dashboard() {
           >
       <div className="mt-10 text-center">
         <h3 className="text-3xl font-bold text-neutral-500  p-5">Our Services</h3>
-        <div className="grid grid-cols-4 text-1xl text-neutral-500 font-serif">
+        <div className="lg:grid grid-cols-4 lg:text-1xl text-neutral-500 font-serif sm:block sm:p-20 sm:text-2xl">
           <div className="flex flex-col items-center">
             <FaVideo className={styles.videoIcon} />
             <p>VIDEO EDITING</p>
@@ -73,7 +73,7 @@ export default function Dashboard() {
       {/* About / Service Details */}
       <div className={styles.about}>
         {/* Software Development */}
-        <div className={`flex align-center mt-20 justify-around items-center shadow-md rounded-xl p-4`}>
+        <div className={`lg:flex align-center mt-20 justify-around items-center shadow-md rounded-xl w-full p-4 sm:block`}>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -81,7 +81,7 @@ export default function Dashboard() {
             viewport={{ amount: 0.3  }}
             
           >
-            <Image src="/images/coding.png" alt="Software Development" width={400} height={180} className={styles.imageContainer} />
+            <Image src="/images/coding.png" alt="Software Development" width={400} height={180} className={`hidden sm:block ${styles.imageContainer}`} />
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -91,15 +91,24 @@ export default function Dashboard() {
             
           >
             <h2 className="text-3xl text-center">Software Development</h2>
-            <p className="w-[500px] text-neutral-500 text-2xl">
+            <p className="lg:w-[500px] sm:w-full text-neutral-500 text-2xl">
               From sleek mobile apps to dynamic web solutions, our software development services cover it all.
               We also provide hands-on classes to help you master the craft yourself!
             </p>
           </motion.div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ amount: 0.3  }}
+            
+          >
+            <Image src="/images/coding.png" alt="Software Development" width={400} height={180} className={`sm:hidden ${styles.imageContainer}`} />
+          </motion.div>
         </div>
 
         {/* Video Editing */}
-        <div className={`flex align-center mt-20 justify-around items-center shadow-md rounded-xl p-4`}>
+        <div className={`lg:flex align-center mt-20 justify-around items-center shadow-md rounded-xl overflow-hidden p-4 sm:block`}>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -107,7 +116,7 @@ export default function Dashboard() {
             viewport={{ amount: 0.3  }}
           >
             <h2 className="text-3xl text-center">Video Editing</h2>
-            <p className="w-[500px] text-neutral-500 text-2xl">
+            <p className="lg:w-[500px] text-neutral-500 text-2xl sm:w-full sm:p-10">
               Unlock the power of visual storytelling with our professional video editing services.
               We transform raw footage into captivating content that stands out.
             </p>
@@ -123,14 +132,14 @@ export default function Dashboard() {
         </div>
 
         {/* Graphic Design */}
-        <div className={`flex align-center mt-20 justify-around items-center shadow-md rounded-xl p-4 `}>
+          <div className={`lg:flex align-center mt-20 justify-around items-center shadow-md rounded-xl overflow-hidden p-4 sm:block`}>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ amount: 0.3  }}
           >
-            <Image src="/images/graphic.png" alt="Graphic Design" width={400} height={180} className={styles.imageContainer}  />
+            <Image src="/images/graphic.png" alt="Graphic Design" width={400} height={180} className={`hidden sm:block ${styles.imageContainer}`}  />
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -139,15 +148,23 @@ export default function Dashboard() {
             viewport={{ amount: 0.3  }}
           >
             <h2 className="text-3xl text-center">Graphic Design</h2>
-            <p className="w-[500px] text-neutral-500 text-2xl">
+            <p className="lg:w-[500px] sm:w-full text-neutral-500 text-2xl">
               Elevate your brand with our creative graphic design services. From logos to marketing
               materials, we bring your vision to life.
             </p>
           </motion.div>
+           <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ amount: 0.3  }}
+          >
+            <Image src="/images/graphic.png" alt="Graphic Design" width={400} height={180} className={`sm:hidden ${styles.imageContainer}`}  />
+          </motion.div>
         </div>
 
         {/* SEO Ranking */}
-        <div className={`flex align-center mt-20 justify-around items-center shadow-md rounded-xl p-4`}>
+         <div className={`lg:flex align-center mt-20 justify-around items-center sm:relative shadow-md rounded-xl overflow-hidden p-4 sm:h-[500px] sm:block`}>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -155,7 +172,7 @@ export default function Dashboard() {
             viewport={{ amount: 0.3  }}
           >
             <h2 className="text-3xl text-center">SEO Ranking</h2>
-            <p className="w-[500px] text-neutral-500 text-2xl">
+            <p className="lg:w-[500px] text-neutral-500 text-2xl sm:w-full">
               Boost your online visibility with our comprehensive SEO ranking services, including YouTube optimization.
               We optimize your website and content to climb search engine results and attract more traffic.
             </p>

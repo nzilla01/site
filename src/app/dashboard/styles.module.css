@@ -82,3 +82,23 @@
 
 }
 
+
+@media screen and (max-width:600px) {
+  .imageContainer{
+    width:100%;
+    height:auto;
+    margin: 10px 0;
+
+  }
+  .pre{
+    display: none;
+  }
+  .heroPage{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

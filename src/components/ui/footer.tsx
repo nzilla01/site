@@ -28,12 +28,12 @@ export default function Footer(){
         {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact</h3>
-          <p>Email: <a href="mailto:hello@atrivix.com" className="hover:text-neutral-300 transition">Okon.Nsikak01@gmail.com</a></p>
+          <p>Email: <a href="Okon.Nsikak01@gmail.com" className="hover:text-neutral-300 transition">Okon.Nsikak01@gmail.com</a></p>
           <p>Phone: <a href="tel: +2349162684499" className="hover:text-neutral-300 transition"> +2349162684499</a></p>
           <p className="mt-4">Follow us:</p>
           <div className="flex gap-4 mt-2 text-2xl">
             <a href="#" className="hover:text-neutral-300 transition"><FaGlobe /></a>
-            <a href="#" className="hover:text-neutral-300 transition"><FaTwitter /></a>
+            <a href="https://x.com/Okonnsikak4" className="hover:text-neutral-300 transition"><FaTwitter /></a>
             <a href="#" className="hover:text-neutral-300 transition"><FaInstagram /></a>
           </div>
         </div>

@@ -18,3 +18,10 @@
   width: 150px;
   border-radius: 50%;
 }
+
+@media screen and (max-width:640px){
+  .navbar{
+    padding: 10px 0;
+  }
+  
+}
