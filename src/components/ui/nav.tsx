@@ -25,19 +25,19 @@ export default function Nav() {
   const close = () => setIsOpen(false);
 
   return (
-    <header className="flex justify-between items-center p-4 relative z-50">
+    <header className="flex justify-around items-center  relative z-50">
       {/* Logo */}
       <div>
         <Image src="/logo.png" alt="Atrivix Agency Logo" width={100} height={50} />
       </div>
 
       {/* Desktop Nav */}
-      <nav className="hidden lg:flex space-x-10 text-neutral-500 font-medium">
-        <Link href="/" className="flex items-center space-x-2 hover:text-neutral-100"><FaHome /><span>Home</span></Link>
-        <Link href="/about" className="flex items-center space-x-2 hover:text-neutral-100"><FaProjectDiagram /><span>Project</span></Link>
-        <Link href="/services" className="flex items-center space-x-2 hover:text-neutral-100"><FaServicestack /><span>Services</span></Link>
-        <Link href="/contact" className="flex items-center space-x-2 hover:text-neutral-100"><FaPhoneAlt /><span>Contact</span></Link>
-        <Link href="/blog" className="flex items-center space-x-2 hover:text-neutral-100"><FaBlog /><span>Blog</span></Link>
+      <nav className="hidden lg:flex space-x-20 text-neutral-500 font-medium">
+        <Link href="/" className="flex items-center space-x-2 hover:text-neutral-900"><FaHome /><span>Home</span></Link>
+        <Link href="/about" className="flex items-center space-x-2 hover:text-neutral-900"><FaProjectDiagram /><span>Project</span></Link>
+        <Link href="/services" className="flex items-center space-x-2 hover:text-neutral-900"><FaServicestack /><span>Services</span></Link>
+        <Link href="/contact" className="flex items-center space-x-2 hover:text-neutral-900"><FaPhoneAlt /><span>Contact</span></Link>
+        <Link href="/blog" className="flex items-center space-x-2 hover:text-neutral-900"><FaBlog /><span>Blog</span></Link>
       </nav>
 
       {/* Hamburger Button (Mobile) */}

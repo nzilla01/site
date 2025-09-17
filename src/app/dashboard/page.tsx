@@ -48,7 +48,7 @@ export default function Dashboard() {
             className={styles.services}
           >
       <div className="mt-10 text-center">
-        <h3 className="text-3xl font-bold text-neutral-500  p-5">Our Services</h3>
+        <h3 className="text-3xl font-bold text-neutral-500 ">Our Services</h3>
         <div className="lg:grid grid-cols-4 lg:text-1xl text-neutral-500 font-serif sm:block sm:p-20 sm:text-2xl">
           <div className="flex flex-col items-center">
             <FaVideo className={styles.videoIcon} />
