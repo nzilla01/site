@@ -1,13 +1,18 @@
 "use client";
+import { useState } from "react";
 import styles from "@/app/dashboard/styles.module.css";
 import { FaVideo, FaLaptopCode, FaChartLine } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Review from "@/components/ui/review"
+import BookingForm from "@/components/ui/bookingForm"
 
 
 export default function Dashboard() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="p-2">
       {/* Hero Section */}
@@ -24,7 +29,9 @@ export default function Dashboard() {
             We turn ideas into impact — from websites and apps, to SEO, trading fund management, video editing, and content writing.
             Whatever your vision, we help you create, scale, and succeed.
             <span className="mt-5 justify-center text-xl font-bold flex">
-              <button className="shadow-2xl bg-[#0d4c7f] text-[#F0FFFF] font-bold py-2 px-5 rounded-2xl">
+              <button
+                onClick={() => setIsOpen(true)}
+               className="shadow-2xl bg-[#0d4c7f] text-[#F0FFFF] font-bold py-2 px-5 rounded-2xl">
                 Book Now
               </button>
             </span>
@@ -167,6 +174,15 @@ export default function Dashboard() {
       <div>
         <Review />
       </div>
+
+       {/* Popup Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <BookingForm onClose={() => setIsOpen(false)} />
+        </div>
+      )}
+
+
 
 
       
